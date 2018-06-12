@@ -34,8 +34,8 @@ Properties properties = new Properties()
 if (project.rootProject.file('local.properties').exists()) {
     properties.load(project.rootProject.file('local.properties').newDataInputStream())
 } else {
-    properties.setProperty("bintray.user", System.getenv("BINTRAY_USER"))
-    properties.setProperty("bintray.apikey", System.getenv("BINTRAY_PASSWORD"))
+    properties.put("bintray.user", System.getenv("BINTRAY_USER"))
+    properties.put("bintray.apikey", System.getenv("BINTRAY_PASSWORD"))
 }
 
 bintray {
