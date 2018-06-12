@@ -70,7 +70,6 @@ bintray {
             gpg {
                 sign = true //Determines whether to GPG sign the files. The default is false
                 passphrase = gpgPassword
-                passphrase = gpgPassword
                 //Optional. The passphrase for GPG signing'
             }
         }
